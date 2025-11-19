@@ -15,6 +15,7 @@ class Settings(BaseSettings):
     # Email
     AWS_SES_REGION: str = "us-east-1"
     EMAIL_SENDER: str
+    EMAIL_PASSWORD: str  # contraseña de aplicación para Gmail u otro servicio
 
     # Whitelist de dominios corporativos
     DOMAIN_WHITELIST: list[str] = ["blackrock.com", "jpmorgan.com"]

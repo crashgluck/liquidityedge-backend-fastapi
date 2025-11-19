@@ -6,7 +6,8 @@ from app.core.security import hash_password, verify_password
 from app.core.jwt import create_access_token
 from app.core.config import get_settings
 from app.db.session import get_db
-from app.services.email_ses import send_2fa_email
+#from app.services.email_ses import send_2fa_email
+from app.services.email_smtp import send_2fa_email
 import random, datetime
 
 router = APIRouter()
